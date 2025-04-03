@@ -1,68 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* ─── Tipografía ─── */
+  --font-primary: 'Newsreader', serif;
+  --font-secondary: 'Roboto', sans-serif;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* ─── Colores Principales ─── */
+  --primary-color-1: #10062C;
+  --primary-color-2: #120436;
+  --primary-color-3: #160546;
+  --primary-color-4: #23096B;
+  --primary-color-5: #2F0B91;
+  --button-color-1: #a80000;
+  --button-color-2: #810c0c;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* ─── Otros ─── */
+  --text-color: #ffffff; /* Texto blanco */
+  --bg-color: var(--primary-color-1); /* Fondo base */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* ─── RESETEO GLOBAL ─── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--font-secondary);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* ─── TIPOGRAFÍA ─── */
+h1, h2, h3 {
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-5);
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-color-1);
+  color: white;
+  border: none;
+  border-radius: 6%;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: 0.3s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:active {
+  transform: scale(0.98); 
+  background-color: var(--button-color-2);
 }
+
+/* ─── CLASES UTILES ─── */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
