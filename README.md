@@ -31,6 +31,10 @@ Antes de comenzar el desarrollo, hemos realizado una **maqueta en Figma** para d
 
 Actualmente nos encontramos en la fase de diseño y planificación. El siguiente paso es comenzar con la implementación del **frontend**, utilizando archivos JSON como base de datos temporal para probar la funcionalidad.
 
+## Header implementacion 04/94/2025
+
+Hemos implementado el componente Header, incluyendo navegación adaptable a dispositivos móviles (menú hamburguesa) con animaciones de entrada y salida. El menú se muestra como una ventana deslizante que cubre parte de la pantalla, con un fondo oscuro al activarse para mejorar la experiencia visual. Además, se ha añadido la funcionalidad para cerrar el menú tanto al hacer clic fuera de él como al volver a pulsar el icono de menú. También se han definido variables globales de colores y tipografías en App.css, que se utilizan de forma consistente en todo el diseño. El proyecto se encuentra estructurado por componentes, y se están utilizando archivos JSON como fuente temporal de datos hasta la conexión con la base de datos real.
+
 🚀 _El desarrollo será iterativo, asegurando que cada funcionalidad sea probada antes de integrarla en el proyecto final._
 
 📢 **Este proyecto es parte de nuestro portafolio y no será implementado en producción.**
