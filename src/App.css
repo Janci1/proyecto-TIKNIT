@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  /* ─── Tipografía ─── */
+  --font-primary: 'Newsreader', serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  /* ─── Colores Principales ─── */
+  --primary-color-1: #10062C;
+  --primary-color-2: #120436;
+  --primary-color-3: #160546;
+  --primary-color-4: #23096B;
+  --primary-color-5: #2F0B91;
+  --button-color-1: #a80000;
+  --button-color-2: #810c0c;
+
+  /* ─── Otros ─── */
+  --text-color: #ffffff; /* Texto blanco */
+  --bg-color: var(--primary-color-1); /* Fondo base */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ─── RESETEO GLOBAL ─── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* ─── TIPOGRAFÍA ─── */
+h1, h2, h3 {
+  font-family: var(--font-primary);
 }
 
-.card {
-  padding: 2em;
+a {
+  text-decoration: none;
+  color: var(--primary-color-5);
 }
 
-.read-the-docs {
-  color: #888;
+button {
+  background-color: var(--button-color-1);
+  color: white;
+  border: none;
+  border-radius: 6%;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+button:active {
+  transform: scale(0.98); 
+  background-color: var(--button-color-2);
+}
+

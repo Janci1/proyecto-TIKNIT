@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lucía",
+    "apellido": "Ramírez",
+    "email": "lucia.ramirez@email.com",
+    "contraseña": "lucia1234",
+    "fecha_nacimiento": "2000-06-12",
+    "foto_perfil": "datos/clientes/LuciaRamirez",
+    "fecha_registro": "2024-10-05"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos",
+    "apellido": "Gómez",
+    "email": "carlos.gomez@email.com",
+    "contraseña": "carlos5678",
+    "fecha_nacimiento": "2006-02-28",
+    "foto_perfil": "/CarlosGomez",
+    "fecha_registro": "2024-11-10"
+  },
+  {
+    "id": 3,
+    "nombre": "Marina",
+    "apellido": "Sánchez",
+    "email": "marina.sanchez@email.com",
+    "contraseña": "marina9876",
+    "fecha_nacimiento": "2003-09-19",
+    "foto_perfil": "/MarinaSanchez",
+    "fecha_registro": "2025-01-22"
+  },
+  {
+    "id": 4,
+    "nombre": "Julián",
+    "apellido": "Martínez",
+    "email": "julian.martinez@email.com",
+    "contraseña": "julian4321",
+    "fecha_nacimiento": "1998-12-03",
+    "foto_perfil": "/JulianMartinez",
+    "fecha_registro": "2025-02-14"
+  }
+]
