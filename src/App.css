@@ -35,7 +35,7 @@ body {
 
 /* ─── TIPOGRAFÍA ─── */
 h1, h2, h3 {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
 
 a {
