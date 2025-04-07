@@ -38,7 +38,7 @@
 
 .contenedorLogin{
   height: 60vh;
-  margin: 0 5rem;
+  margin: 3rem 5rem 0 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,7 +93,7 @@
   color: var(--primary-color-1);
   border-color: var(--primary-color-1);
   border-width: 0 0 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .mensajeError{
