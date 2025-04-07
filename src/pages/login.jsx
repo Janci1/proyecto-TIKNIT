@@ -40,6 +40,15 @@ function Login() {
       foto: user.foto_perfil, 
       fecha_registro: user.fecha_registro 
     });
+    login({ 
+      id: user.id, 
+      nombre: user.nombre, 
+      apellido: user.apellido, 
+      email: user.email, 
+      fecha_nacimiento: user.fecha_nacimiento, 
+      foto: user.foto_perfil, 
+      fecha_registro: user.fecha_registro 
+    });
     navigate('/');
   };
 
@@ -193,7 +202,71 @@ function Login() {
             </form>
           </div>
         </div>
-      </div>
+          <div className='contenedorRegistro'>
+            <form onSubmit={handleRegisterSubmit}>
+              <div>
+                <p>Nombre</p>
+                <input
+                  className='inputUsuario'
+                  type="text"
+                  name="nombre"
+                  value={registerData.nombre}
+                  onChange={handleRegisterChange}
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+                <div>
+                  <p>Apellido</p>
+                  <input
+                    className='inputUsuario'
+                    type="text"
+                    name="apellido"
+                    value={registerData.apellido}
+                    onChange={handleRegisterChange}
+                    placeholder="Apellido"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>Correo electrónico</p>
+                  <input
+                    className='inputUsuario'
+                    type="email"
+                    name="email"
+                    value={registerData.email}
+                    onChange={handleRegisterChange}
+                    placeholder="correo@ejemplo.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>Contraseña</p>
+                  <input
+                    className='inputUsuario'
+                    type="password"
+                    name="contraseña"
+                    value={registerData.contraseña}
+                    onChange={handleRegisterChange}
+                    placeholder="**********"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>Fecha de nacimiento</p>
+                  <input
+                    className='inputUsuario'
+                    type="date"
+                    name="fecha_nacimiento"
+                    value={registerData.fecha_nacimiento}
+                    onChange={handleRegisterChange}
+                    required
+                  />
+                </div>
+                <button type="submit">Crear cuenta</button>
+            </form>
+          </div>
+        </div>
     </div>
   );
 }
