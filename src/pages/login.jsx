@@ -40,15 +40,6 @@ function Login() {
       foto: user.foto_perfil, 
       fecha_registro: user.fecha_registro 
     });
-    login({ 
-      id: user.id, 
-      nombre: user.nombre, 
-      apellido: user.apellido, 
-      email: user.email, 
-      fecha_nacimiento: user.fecha_nacimiento, 
-      foto: user.foto_perfil, 
-      fecha_registro: user.fecha_registro 
-    });
     navigate('/');
   };
 
@@ -105,7 +96,6 @@ function Login() {
         </div>      
         <div className={`contenedorPestañas ${isRegistering ? 'moverIzquierda' : 'moverDerecha'}`}>
           <div className='contenedorLogin'>
-            <h2 className='titulo'>INICIAR SESIÓN</h2>
             <form onSubmit={handleSubmit}>
               <div>
                 <div className='contenedorSelector'>
