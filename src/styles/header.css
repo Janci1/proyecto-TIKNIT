@@ -107,6 +107,10 @@ header{
     color: var(--text-color);
   }
 
+  .logoPrincipal{
+    margin: 0;
+  }
+
   /* Ocultar el menú en pantallas pequeñas por defecto */
   .navegador {
     list-style: none;
@@ -122,6 +126,7 @@ header{
     flex-direction: column;
     transition: all 0.4s ease-in-out;
     z-index: 2; /* Asegura que el menú esté por encima del contenido */
+    border-bottom-right-radius: 2rem;
   }
 
   .navegador li a{
@@ -136,9 +141,11 @@ header{
   }
 
   .textoPerfil p{
+    color: var(--text-color);
     font-size: 0.8rem;
     font-family: var(--font-secondary);
     font-weight: 100;
+    margin: 0;
   }
 
   .navegador li a img{
@@ -182,6 +189,7 @@ header{
     position: absolute;
     bottom: 0;
     width: 100%;
+    border-bottom-right-radius: 2rem;
   }
   .subContenedorCabecera {
     display: flex;

@@ -5,9 +5,9 @@
     "apellido": "Ramírez",
     "email": "lucia.ramirez@email.com",
     "contraseña": "lucia1234",
-    "fecha_nacimiento": "2000-06-12",
-    "foto_perfil": "/src/assets/Datos/clientes/LuciaRamirez.jpg",
-    "fecha_registro": "2024-10-05"
+    "fecha_nacimiento": "12-06-2000",
+    "foto_perfil": "/src/assets/data/clientes/LuciaRamirez.jpg",
+    "fecha_registro": "05-10-2024"
   },
   {
     "id": 2,
@@ -15,9 +15,9 @@
     "apellido": "Gómez",
     "email": "carlos.gomez@email.com",
     "contraseña": "carlos5678",
-    "fecha_nacimiento": "2006-02-28",
-    "foto_perfil": "/src/assets/Datos/clientes/CarlosGomez.jpg",
-    "fecha_registro": "2024-11-10"
+    "fecha_nacimiento": "28-02-2006",
+    "foto_perfil": "/src/assets/data/clientes/CarlosGomez.jpg",
+    "fecha_registro": "10-11-2024"
   },
   {
     "id": 3,
@@ -25,9 +25,9 @@
     "apellido": "Sánchez",
     "email": "marina.sanchez@email.com",
     "contraseña": "marina9876",
-    "fecha_nacimiento": "2003-09-19",
-    "foto_perfil": "/src/assets/Datos/clientes/MarinaSanchez.jpg",
-    "fecha_registro": "2025-01-22"
+    "fecha_nacimiento": "19-09-2003",
+    "foto_perfil": "/src/assets/data/clientes/MarinaSanchez.jpg",
+    "fecha_registro": "22-01-2025"
   },
   {
     "id": 4,
@@ -35,8 +35,8 @@
     "apellido": "Martínez",
     "email": "julian.martinez@email.com",
     "contraseña": "julian4321",
-    "fecha_nacimiento": "1998-12-03",
-    "foto_perfil": "/src/assets/Datos/clientes/JulianMartinez.jpg",
-    "fecha_registro": "2025-02-14"
+    "fecha_nacimiento": "03-12-1998",
+    "foto_perfil": "/src/assets/data/clientes/JulianMartinez.jpg",
+    "fecha_registro": "14-02-2025"
   }
 ]
