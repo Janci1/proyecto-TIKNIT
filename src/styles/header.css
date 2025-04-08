@@ -106,6 +106,10 @@ header{
     color: var(--text-color);
   }
 
+  .logoPrincipal{
+    margin: 0;
+  }
+
   /* Ocultar el menú en pantallas pequeñas por defecto */
   .navegador {
     list-style: none;
@@ -136,9 +140,11 @@ header{
   }
 
   .textoPerfil p{
+    color: var(--text-color);
     font-size: 0.8rem;
     font-family: var(--font-secondary);
     font-weight: 100;
+    margin: 0;
   }
 
   .navegador li a img{

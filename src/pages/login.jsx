@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
-import userData from '/src/assets/Datos/clientes.json'
+import userData from '/src/assets/data/clientes.json'
 import '/src/styles/login.css'
 //import '/src/styles/login.css'
 
@@ -106,7 +106,7 @@ function Login() {
                       if (selected) {
                         setEmail(selected.email);
                         setPassword(selected.contraseña);}}}>
-                          
+                      <option>Perfiles Ejemplo</option>
                     {userData.map((perfil, i) => (
                       <option key={i} value={perfil.nombre}>
                         {perfil.nombre} {perfil.apellido}

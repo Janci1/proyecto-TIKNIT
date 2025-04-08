@@ -124,6 +124,11 @@
   border-bottom: 1px solid var(--primary-color-5);
   font-size: 0.8rem;
   font-weight: 400;
+  padding: 0;
+}
+
+.barraCambio .activo {
+  padding: 0;
 }
 
 .contenedorPestañas {

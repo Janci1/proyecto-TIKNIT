@@ -54,7 +54,7 @@ function Header() {
               <img
                 className='fotoPerfil'
                 //* De momento colocaremos la foto de un perfil vacio
-                src={user?.foto || '/src/assets/datos/clientes/sinPerfil.jpg'}
+                src={user?.foto || '/src/assets/data/clientes/sinPerfil.jpg'}
                 alt={`Foto de ${user?.nombre || 'perfil'}`}
                 />
             </Link>
@@ -66,7 +66,7 @@ function Header() {
             <Link  to={user ? '/perfil':'/login'} onClick={() => setMenuVisible(false)}>
             <img className='fotoPerfil1'
                 //* De momento colocaremos la foto de un perfil vacio
-                src={user?.foto||'/src/assets/datos/clientes/sinPerfil.jpg'}
+                src={user?.foto||'/src/assets/data/clientes/sinPerfil.jpg'}
                 alt={`Foto de ${user?.nombre || 'perfil'}`}
             />
             <div className='textoPerfil'>
