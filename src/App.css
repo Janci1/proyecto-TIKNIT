@@ -26,11 +26,26 @@
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+}
+
 body {
   font-family: var(--font-secondary);
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  height: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% de la altura de la ventana */
+}
+
+.main-content {
+  flex: 1; /* Ocupa el espacio sobrante, empuja al footer hacia abajo */
 }
 
 /* ─── TIPOGRAFÍA ─── */
