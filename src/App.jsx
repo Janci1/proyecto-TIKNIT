@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';  // Importa el Header
 import Footer from './components/footer';
 import Login from './pages/login';
+import Perfil from './pages/perfil';
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <main className='main-content'>{/* hace que el footer se mantenga abajo */}
             <Routes>
               <Route path='/login' element={<Login />}/>
+              <Route path='/perfil' element={<Perfil />}/>
             </Routes> {/* El header estará en todas las páginas */}
           </main>
         <Footer />
@@ -20,7 +22,4 @@ function App() {
     </Router>
   );
 }
-
-
-
 export default App;
